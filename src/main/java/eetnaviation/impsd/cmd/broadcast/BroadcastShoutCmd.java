@@ -1,4 +1,4 @@
-package tk.noteiced.impsd.cmd.broadcast;
+package eetnaviation.impsd.cmd.broadcast;
 
 import org.bukkit.*;
 import org.bukkit.command.Command;

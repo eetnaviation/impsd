@@ -1,11 +1,11 @@
-package tk.noteiced.impsd.cmd.broadcast;
+package eetnaviation.impsd.cmd.broadcast;
 
-import org.bukkit.*;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import tk.noteiced.impsd.Impsd;
 
 public class BroadcastAdminCmd implements CommandExecutor{
 	@Override

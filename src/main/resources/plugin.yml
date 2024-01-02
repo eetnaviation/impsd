@@ -1,12 +1,12 @@
 name: Impsd
 version: '${project.version}'
-main: tk.noteiced.impsd.Impsd
+main: eetnaviation.impsd.Impsd
 api-version: 1.18
 prefix: IMPSD
 load: STARTUP
-authors: [ NOTEICED ]
+authors: [ eetnaviation ]
 description: IMPSD Utility plugin
-website: noteiced.tk:8080
+website: github.com/eetnaviation
 
 
 commands:

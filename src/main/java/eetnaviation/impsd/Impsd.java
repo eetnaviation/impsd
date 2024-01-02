@@ -1,9 +1,9 @@
-package tk.noteiced.impsd;
+package eetnaviation.impsd;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import tk.noteiced.impsd.cmd.broadcast.BroadcastAdminCmd;
-import tk.noteiced.impsd.cmd.broadcast.BroadcastShoutCmd;
-import tk.noteiced.impsd.cmd.ping.PingCmd;
+import eetnaviation.impsd.cmd.broadcast.BroadcastAdminCmd;
+import eetnaviation.impsd.cmd.broadcast.BroadcastShoutCmd;
+import eetnaviation.impsd.cmd.ping.PingCmd;
 
 public final class Impsd extends JavaPlugin {
 

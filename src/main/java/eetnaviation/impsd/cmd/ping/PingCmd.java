@@ -1,11 +1,11 @@
-package tk.noteiced.impsd.cmd.ping;
+package eetnaviation.impsd.cmd.ping;
 
 import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import tk.noteiced.impsd.Impsd;
+import eetnaviation.impsd.Impsd;
 
 public class PingCmd implements CommandExecutor{
     @Override
