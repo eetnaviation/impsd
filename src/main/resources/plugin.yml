@@ -1,0 +1,74 @@
+name: Impsd
+version: '${project.version}'
+main: tk.noteiced.impsd.Impsd
+api-version: 1.18
+prefix: IMPSD
+load: STARTUP
+authors: [ NOTEICED ]
+description: IMPSD Utility plugin
+website: noteiced.tk:8080
+
+
+commands:
+  shout:
+    description: Standard shout command
+    permission: impsd.chat.broadcast.shout
+    permission-message: Unkown command. Type "/help" for help
+  broadcast:
+    description: Server-wide broadcast command for administrators
+    permission: impsd.admin.chat.broadcast.shout
+    permission-message: Unkown command. Type "/help" for help
+  ping:
+    description: Test if plugin is responsive. Ping! Pong!
+    permission: impsd.admin.core.ping
+    permission-message: Unkown command. Type "/help" for help
+
+
+permissions:
+  impsd.chat.broadcast.shout:
+    description: Allows shout command
+    default: op
+  impsd.admin.chat.broadcast.shout:
+    description: Allows administrative server-wide broadcast command
+    default: op
+  impsd.admin.core.ping:
+    description: Allows Ping! Pong! command
+    default: op
+  impsd.chat.*:
+    description: All chat permissions
+    default: op
+    children:
+      impsd.chat.broadcast.shout: true
+      impsd.admin.chat.broadcast.shout: false
+  impsd.admin.chat.*:
+    description: All administrative chat permissions
+    default: op
+    children:
+      impsd.chat.broadcast.shout: true
+      impsd.admin.chat.broadcast.shout: true
+  impsd.admin.core.*:
+    description: All IMPSD core management permissions
+    default: op
+    children:
+      impsd.admin.core.ping: true
+  impsd.admin.odp:
+    description: Absolutely every permission in the IMPSD plugin
+    default: op
+    children:
+      impsd.chat.broadcast.shout: true
+      impsd.admin.chat.broadcast.shout: true
+      impsd.admin.core.ping: true
+      impsd.chat.*: true
+      impsd.admin.chat.*: true
+      impsd admin.core.*: true
+  impsd.no:
+    description: Use this if you need to grant no permissions
+    default: false
+    children:
+      impsd.chat.broadcast.shout: false
+      impsd.admin.chat.broadcast.shout: false
+      impsd.admin.core.ping: false
+      impsd.chat.*: false
+      impsd.admin.chat.*: false
+      impsd.admin.core.*: false
+      impsd.admin.odp: false
